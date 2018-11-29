@@ -10,11 +10,9 @@
 
 Pycal (pronounced “pie cal”) is a simple, modern, object-oriented, and dynamically-typed programming language. Based on Python and Pascal, but differing in the following ways:
 
-1. d
-
 ### 1.1 - Genealogy
 
-![](/Users/daniel/git/pycal/static/images/Genealogy.png)
+![Genealogy](/static/images/Genealogy.png)
 
 ### 1.2 - Hello World
 
