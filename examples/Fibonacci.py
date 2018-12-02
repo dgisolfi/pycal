@@ -8,3 +8,9 @@ def fibonacci(n) =
         return n
     else =  
         return fibonacci(n-1) + fibonacci(n-2)
+
+def main() =
+    print(`fibonacci ${fibonacci(4)}`)
+
+if __name__ == `__main__`:
+    main()
