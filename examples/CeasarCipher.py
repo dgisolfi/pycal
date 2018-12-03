@@ -1,9 +1,9 @@
-#!/usr/bin/env pycal
+#!/usr/bin/env python
 Program := CeasarCipher
+    
 # CeasarCipher module written in pycal
-
-og:string = `hal`
-key:int   = 6
+og:string := `hal`
+key:int := 6
 
 def encrypt(str, key) = 
     a := ord(`a`)

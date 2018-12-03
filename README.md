@@ -20,7 +20,7 @@ Pycal (pronounced “pie cal”) is a simple, modern, object-oriented, and dynam
 
 The most basic of programs implemented in pycal.
 
-File `hello.pyc`:
+File `hello.py`:
 
 ```python
 #!/usr/bin/env pycal
@@ -36,9 +36,11 @@ pycal key organizational concepts
 * Programs should be declared and given a name, this should be done at the begeining of the file following the shebang
 * Imports must be declared after the program name
 
+File `PizzaClass.py`:
+
 ```python
 #!/usr/bin/env pycal
-Program PizzaClass
+Program := PizzaClass
 class Food
 	def __init__(self, dish_name, place_origin) =
         self.dish_name := dish_name
@@ -191,7 +193,7 @@ A ***keyword***, also known as reserved words, are used to define the syntax and
 
 *New Keywords*:
 
-**neg**
+**neg** 
 
 *Removed Keywords*:
 
@@ -207,17 +209,21 @@ A ***keyword***, also known as reserved words, are used to define the syntax and
 
 ### 3.2 Reference Types in Pycal differing from Python and Pascal
 
+
+
 ## Section 4 Example Programs
 
 ### 4.1 Caesar Cipher
+
+File `CeasarCipher.py`:
 
 ```python
 #!/usr/bin/env pycal
 Program := CeasarCipher
     
 # CeasarCipher module written in pycal
-og:string = `hal`
-key:int   = 6
+og:string := `hal`
+key:int := 6
 
 def encrypt(str, key) = 
     a := ord(`a`)
@@ -243,6 +249,8 @@ solve(og, 0, 26)
 
 ### 4.2 Factorial
 
+File `Factorial.py`:
+
 ```python
 #!/usr/bin/env pycal
 Program := Fibonacci
@@ -259,10 +267,14 @@ print(`fibonacci ${fibonacci(7)}`)
 ```
 
 ### 4.3 Bubble Sort
+
+File `BubbleSort.py`:
+
 ```python
 #!/usr/bin/env pycal
 Program := BubbleSort
-    
+
+# Bubble sort function written in pycal
 def bubblesort(l) =
   for i in range(len(l)) =
     for j in range(len(l) - 1, i, neg(1)) =
@@ -270,8 +282,71 @@ def bubblesort(l) =
         swap(A, j, j - 1)
  
 def swap(l, x, y) =
-  tmp = l[x]
-  l[x] = l[y]
-  l[y] = tmp
+  tmp := l[x]
+  l[x] := l[y]
+  l[y] := tmp
+```
+
+### 4.4 Lambda Functions
+
+File `Lambda.py`:
+
+```python
+#!/usr/bin/env pycal
+Program := Lambda
+    
+double := lambda x = x * 2
+square := lambda x = x * x
+    
+nums := [ 1, 2, 3, 4, 5]
+num_list := list(map(lambda x: x * 2 , num_list))
+
+print(double(5))
+print(square(5))
+print(num_list)
+```
+
+### 4.5 Stack
+
+File `Stack.py`:
+
+```python
+#!/usr/bin/env pycal
+Program := Stack
+
+class Stack:
+     def __init__(self) =
+        self.items = []
+
+     def isEmpty(self) =
+        return self.items == []
+
+     def push(self, item) =
+        self.items.append(item)
+
+     def pop(self) =
+        return self.items.pop()
+
+     def peek(self) =
+        return self.items[len(self.items)-1]
+
+     def size(self) =
+        return len(self.items)
+
+     def __del__(self) =
+        print('destroying stack')
+
+
+s = Stack()
+s.push('a')
+s.push('b')
+s.push('c')
+
+# returns 3
+num := s.size()
+# Returns top element
+topElement = s.peek()
+# Returns last element in the stack
+element := s.pop()
 ```
 

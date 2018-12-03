@@ -1,4 +1,4 @@
-#!/usr/bin/env pycal
+#!/usr/bin/env python
 Program := Fibonacci
 # Fibonacci function written in pycal
 
