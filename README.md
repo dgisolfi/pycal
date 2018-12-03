@@ -14,7 +14,7 @@ Pycal (pronounced “pie cal”) is a simple, modern, object-oriented, and dynam
 
 ### 1.1 Genealogy
 
-![Genealogy](./static/images/Genealogy.png)
+![Genealogy](./images/Genealogy.png)
 
 ### 1.2 Hello World
 
@@ -79,7 +79,7 @@ declares a class named Food which has the methods such as, `getDishName` and  `g
 
 ### 1.4 Types and Variables
 
-There is two kind of type in pycal: **value types** 
+There is two kind of type in pycal: value types and reference types. Variables classified as value types store their assigned data directly reference types however store references to the assigmed data. Reference types are also known as objects.
 
 ### 1.5 Statements Differeing from Python and Pascal
 
@@ -147,7 +147,7 @@ Conceptually speaking, a program is compiled using three steps:
 
 #### 2.3.1 Comments
 
-WIthin pycal there are two forms of comments, both inherited from its parent languages.
+WIthin Pycal there are two forms of comments, both inherited from its parent languages.
 
 **Single-line Comments** can be done using simmilar syntax as python for example:
 
@@ -207,8 +207,11 @@ A ***keyword***, also known as reserved words, are used to define the syntax and
 
 ### 3.1 Value Types in Pycal differing from Python and Pascal
 
-### 3.2 Reference Types in Pycal differing from Python and Pascal
+**float** derived from python, replaces the **Real** datatype from pascal. Can be defiend as a single-precision floating point value.
 
+
+### 3.2 Reference Types in Pycal differing from Python and Pascal
+**string** derived from python replaces the **Char** datatype from pascal. In Pycal a char can be thought of or represented as a string of length 
 
 
 ## Section 4 Example Programs
